@@ -6,8 +6,5 @@ This repo contains 15 vanilla JavaScript projects. You can try them yourself by 
 | Project         |   Live preview |
 |-----------------|---------------|
 | color flipper   | [link](https://15-vanilla-projects.vercel.app/) |
-|-----------------|----------------------------------|
 | counter         | [link](https://counter-weld.vercel.app/) |
-|-----------------|-----------------------------------------|
 | review project  | [link](https://review-chi.vercel.app/) |
-|-----------------|---------------------------------------|

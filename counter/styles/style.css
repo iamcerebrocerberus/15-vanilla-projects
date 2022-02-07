@@ -1,0 +1,69 @@
+html,body,main,span,h1,button,div {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+}
+
+.cont__count {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.cont__value {
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 1rem 0 1rem;
+}
+
+[class*=cont-btns__] {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border: 0.1rem solid rgb(82, 75, 102);
+    background: white;
+    border-radius: .4rem;
+    transition: 400ms ease-in-out;
+}
+
+[class*=cont-btns__]:hover {
+    background: rgb(34, 21, 21);
+    color: rgb(241, 241, 241);
+}
+
+[class*=cont-btns__]:nth-child(2) {
+    margin: 0 .5rem 0;
+}
+
+@media screen and (max-width: 22.933em) {
+    .cont-btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont-btns :nth-child(2) {
+        margin: 1rem 1rem;
+    }
+}

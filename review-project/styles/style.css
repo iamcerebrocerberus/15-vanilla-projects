@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;500&display=swap');
+
+:root {
+    /*background colors*/
+    --body-bg: hsl(207, 73%, 97%);
+    --main-con-bg: hsl(0, 0%, 100%);
+    --but-hov-bg: hsl(203, 65%, 62%);
+    --review-cl: hsl(200, 79%, 13%);
+    --abt-name-cl: hsl(199, 52%, 13%);
+    --abt-job-cl: rgb(42, 136, 194);
+    --review-bor-cl: rgb(34, 145, 214);
+    --txt-cl: hsl(200, 44%, 20%);
+
+    /*fonts*/
+    --main-fnt: 'Fira Sans', sans-serif;
+}
+
+html,body,header,main,div,p,h1,h2,h3,button,i {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 100%;
+    font-family: var(--main-fnt);
+}
+
+img {
+    display: block;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img[src*=photo] {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.main-head__txt {
+    font-size: 3rem;
+    color: var(--review-cl);
+    letter-spacing: .2rem;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.main-head__txt::after {
+    content: "";
+    position: absolute;
+    border-bottom: .4rem solid var(--review-bor-cl);
+    bottom: 0;
+    width: 50%;
+    left: 25%;
+}
+
+.main-head {
+    padding-bottom: 3rem;
+}
+
+.cont {
+    background: var(--main-con-bg);
+    max-width: 50rem;
+    /* min-height: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 .6rem -.4rem hsl(0, 2%, 24%);
+}
+
+.cont-img-cont {
+    display: flex;
+    justify-content: center;
+    border: .2rem solid hsl(207, 100%, 50%);
+    border-radius: 50%;
+}
+
+.cont-abt-img__name {
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: var(--review-cl);
+    margin-top: .5rem;
+    font-size: 1.5rem;
+}
+
+.cont-abt-img__job {
+    text-transform: uppercase;
+    color: var(--abt-job-cl);
+    letter-spacing: .1rem;
+    font-weight: 400;
+    margin: .5rem 0 .5rem;
+    font-size: 1.5rem;
+}
+
+.cont__txt {
+    color: var(--txt-cl);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.cont-btns {
+    margin-top: 1.3rem;
+    
+}
+.cont-btns button {
+    background: var(--main-con-bg);
+    color: var(--abt-job-cl);
+    font-size: 1.9rem;
+    padding: .3rem;
+    
+}
+
+[class*=left] {
+    margin-right: .5rem;
+    transition: 500ms ease-in-out;
+}
+
+[class*=right] {
+    margin-left: .5rem;
+    transition: 500ms ease-in-out;
+}
+
+
+.cont__surp {
+    background: var(--abt-job-cl);
+    padding: .3rem;
+    color: rgb(240, 232, 232);
+    border-radius: .4rem;
+    margin-top: .3rem;
+}
+
+.cont__surp:hover {
+    color: white;
+    background:rgb(34, 145, 214);
+}
+
+
+@media screen and (max-width: 54em) {
+    .main-head__txt {
+        font-size: 2rem;
+    }
+
+    .main-head__txt::after {
+        border-bottom-width: .3rem;
+    }
+
+    .cont {
+        max-width: 39rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .cont {
+        max-width: 30rem;
+    }
+    .cont-abt-img__name {
+        font-size: 1.1rem;
+    }
+
+    .cont-abt-img__job {
+        font-size: 1.2rem;
+    }
+    .cont__txt {
+        font-size: 1.1rem;
+    }
+
+    .cont-btns {
+        margin-top: .2rem;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .cont {
+        max-width: 20rem;
+    }
+    .cont-abt-img__job {
+        font-size: 1rem;
+    }
+
+    .main-head__txt {
+        font-size: 1.4rem;
+    }
+    img[src*=photo] {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+    }
+
+    .cont__txt {
+        font-size: 1rem;
+        padding: .3rem;
+    }
+}
+
+@media screen and (max-width: 21em) {
+    .cont {
+        max-width: 18rem;
+    }
+}
+
+@media screen and (max-width: 18em) {
+    .cont {
+        max-width: 16rem;
+    }
+}
